@@ -24,7 +24,6 @@ footer {
 #register-form {
     margin-top: 1%;
     margin-left: 0.5%;
-    background-color:darkmagenta;
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -38,3 +37,73 @@ footer {
     align-self: center;
 }
 
+#register-form input {
+    background-color: #D9D9D9;
+    font-size: 160%;
+    font-style: italic;
+    display: flex;
+    font-family: 'Inria Sans', sans-serif;
+    color: gray;
+    flex-direction: column;  
+}
+
+#input-boxes {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-self: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.name-box {
+    width: 46%;
+    height: 110%;
+}
+
+#name-box-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#region-age-container {
+    display: flex;
+    font-size: inherit;
+    width: 75%;
+    gap: 50px;
+}
+
+#region-select {
+    background-color: #D9D9D9;
+    width: 30%;
+    height: auto;
+    font-size: inherit;
+    text-align: center;
+}
+
+#age-input {
+    display: flex;
+    width: 30%;
+}
+
+#input-boxes label {
+    color:#D9D9D9;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.label-checkbox-div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.checkbox {
+    width: 10%;
+}

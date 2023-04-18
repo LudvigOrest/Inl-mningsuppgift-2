@@ -12,7 +12,36 @@
         <main>
             <form id="register-form">
                 <h1>Registrera ett nytt konto</h1>
-                <h2>TESTESTEST</h1>
+                <container id="input-boxes">
+                    
+                    <container id="name-box-container">
+                        <input type="text" id="first-name" class="name-box" value="förnamn">
+                        <input type="text" id="last-name" class="name-box" value="efternamn">
+                    </container>
+
+                    <input type="email" id="email-input" value="mailadress">
+                    <input type="text" id="phone-input" value="telefonnummer">
+                    <input type="password" id="password-input" value="lösenord">
+
+                    <container id="region-age-container">
+                        <select name="region" id="region-select" value="region">
+                            <option>EU</option>
+                            <option>NA</option>
+                            <option>SA</option>
+                            <option>Asia</option>
+                            <option>Africa</option>
+                            <option>Oceania</option>
+                        </select>
+                        <input type="number" name="age-input" id="age-input" value="ålder">
+                    </container>
+                    
+                    <div class="label-checkbox-div">
+                        <label>prenumerera på nyhetsbrev?</label>
+                        <input type="checkbox" class="checkbox">
+                        <label>jag godkänner villkoren</label>
+                        <input type="checkbox" class="checkbox">
+                    </div>
+                </container>
             </form>
         </main>
 
