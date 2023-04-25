@@ -4,24 +4,28 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&family=Public+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" type="images/x-icon" href="18.jpg">
+        <title>Logga in - Studiehjälp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
     <body>
         <header>
-            <h1 id="top-header">COOL WEBBSIDA</h1>
+            <h1 id="top-header">STUDIE-HJÄLP</h1>
         </header>
         <main>
             <div class="container">
                 <form>
                     <div class="log-in-container">
 
-                        <h1 class="register-header">Logga in</h1>
+                        <h1 class="log-in-header">Logga in</h1>
                         
-                        <input type="email" id="email-input" value="mailadress">
-                        <input type="password" id="password-input" value="lösenord">
+                        <input type="email" id="email-input" placeholder="mailadress" required>
+                        <input type="password" id="password-input" placeholder="lösenord" required>
 
                         <div class="label-checkbox-container">
                             <label class="label-checkbox-dark">kom ihåg mig</label>
                             <input type="checkbox" class="checkbox">
+                            <button class="button-submit" type="submit">Logga in</button>
                         </div>
                     </div>
                 </form>
@@ -29,26 +33,30 @@
                 <form>
                     <div class="register-container">
 
-                        <h1 class="header">Registrera ett nytt konto</h1>
+                        <h1 class="register-header">Registrera ett nytt konto</h1>
 
                         <div id="name-box">
-                            <input type="text" id="first-name" class="first-name" value="förnamn">
-                            <input type="text" id="last-name" class="last-name" value="efternamn">
+                            <input type="text" id="first-name" class="first-name" placeholder="förnamn" required>
+                            <input type="text" id="last-name" class="last-name" placeholder="efternamn">
                         </div>
 
-                        <input type="email" id="email-input" value="mailadress">
-                        <input type="text" id="phone-input" value="telefonnummer">
-                        <input type="password" id="password-input" value="lösenord">
+                        <input type="email" id="email-input" placeholder="mailadress" required>
+                        <input type="text" id="phone-input" placeholder="telefonnummer">
+                        <input type="password" id="password-input" placeholder="lösenord" required>
 
                         <div class="label-checkbox-container">
                             <label class="label-checkbox">prenumerera på nyhetsbrev?</label>
-                            <input type="checkbox" class="checkbox">
-                            <label class="label-checkbox">jag godkänner villkoren</label>
+                            <input type="checkbox" class="checkbox" checked>
+                            <label class="label-checkbox" required>jag godkänner villkoren</label>
                             <input type="checkbox" class="checkbox">
                         </div>
+                        <button class="button-submit" type="submit">Registrera</button>
                     </div>
                 </form>
             </div>
         </main>
     </body>
+    <footer>
+        test
+    </footer>
 </html>

@@ -7,10 +7,14 @@ h1 {
     font-weight: bold;
 }
 
+h1:hover {
+    cursor:default;
+}
+
 header {
     background-color:#f1f1f1;
     margin: 0px;
-    height: 120px;
+    min-height: 120px;
     display:flex;
     justify-content: center;
     align-content: center;
@@ -19,6 +23,24 @@ header {
 #top-header {
     font-size: 50px;
     margin-top: 20px;
+    text-align: center;
+}
+
+#top-header:hover {
+    cursor: pointer;
+}
+
+footer {
+    background-color:#787878;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    min-height: 60px;
+    height: 80px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .container {
@@ -37,6 +59,16 @@ header {
     flex-direction: column;
     gap: 20px;
     width: 100%;
+    scale: 1.0;
+    transition: scale 0.5s ease;
+}
+
+.register-container:hover {
+    transition: scale 0.5s ease-in-out;
+}
+
+.register-container:hover {
+    scale: 1.05;
 }
 
 .log-in-container {
@@ -50,6 +82,16 @@ header {
     padding-top: 2%;
     border-radius: 2%;
     padding-bottom: 5%;
+    scale: 1.0;
+    transition: scale 0.5s ease;
+}
+
+.log-in-container:hover {
+    transform: scale 0.5s ease-in-out;
+}
+
+.log-in-container:hover {
+    scale: 1.05;
 }
 
 form{
@@ -124,6 +166,7 @@ form{
 .checkbox{
     margin-left: 0px;
     margin-right: 30px;
+    outline: 0px;
 }
 
 .items {
@@ -138,6 +181,11 @@ form{
 }
 
 .register-header {
+    color:#f1f1f1;
+    text-align: center;
+}
+
+.log-in-header {
     color:#313131;
     text-align: center;
 }
@@ -149,9 +197,57 @@ form{
 }
 
 input {
+    border: none;
+    outline: 2px solid #515151;
     font-size: 30px;
+}
+
+input:invalid {
+    outline: 2px solid red;
+}
+
+input:placeholder-shown {
+    background-color: white;
+    outline: 2px solid #515151;
 }
 
 select {
     font-size: 30px;
+}
+
+.button-submit {
+    width: fit-content;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 650px) {
+
+    .log-in-container {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+        background-color: #f1f1f1;
+        padding: 5%;
+        padding-top: 2%;
+        border-radius: 2%;
+        padding-bottom: 5%;
+        scale: 1.0;
+        transition: scale 0.5s ease;
+        justify-items: center;
+    }
+
+    .register-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+        scale: 1.0;
+        transition: scale 0.5s ease;
+        background-color:#515151;
+        margin-bottom: 0px;
+        padding: 5%;
+    }
 }
